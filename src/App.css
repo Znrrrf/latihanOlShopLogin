@@ -56,3 +56,25 @@
   background-color: #3E54AC;
   color: white;
 }
+
+.product-list {
+  display: flex;
+}
+
+.login-con{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.login-con h1 {
+  font-size: 30px;
+}
+
+.login-data {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,8 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import "../App.css";
 import { Button, Stack } from '@chakra-ui/react'
 
 
 const NavBar = () => {
+
+    const navigate = useNavigate();
+
     return (
         <div className="nav-con">
             <div className="nav-title">
@@ -12,6 +16,9 @@ const NavBar = () => {
                 <Stack direction='row' spacing={4} align='center'>
                     <Button colorScheme='white' variant='outline'>
                         CART
+                    </Button>
+                    <Button colorScheme='white' variant='outline' onClick={() => navigate("/")}>
+                        Log Out
                     </Button>
                 </Stack>
             </div>
