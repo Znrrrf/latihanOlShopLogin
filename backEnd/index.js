@@ -1,12 +1,18 @@
 const express = require("express");
-const PORT = 3000;
+// const PORT = 3000;
+const dotenv = require("dotenv");
+dotenv.config();
 const app = express();
 
+app.use(express.json());
 
 app.get("/", (req, res) => {
-    res.send("this is my api");
+    res.send({
+        message: "this is my api"
+    });
 });
 
-app.listen(PORT, () => {
-    console.log(`api is running on port ${PORT}`);
+
+app.listen(process.env.PORT, () => {
+    console.log(`api is running on port ${process.env.PORT}`);
 })

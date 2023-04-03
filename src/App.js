@@ -8,6 +8,9 @@ import { Home } from './page/Home';
 import { Register } from './components/Register';
 
 function App() {
+
+  
+
   return (
     <div className="container">
       <Routes>
